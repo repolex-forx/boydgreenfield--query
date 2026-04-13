@@ -1,0 +1,18 @@
+[2026-04-13T03:09:30Z] === ENRICH ITERATION 1 START | repo=boydgreenfield/query sha=1a04a7c0 ===
+[2026-04-13T03:09:30Z] [iter=1] PHASE START: enrich repo=boydgreenfield/query sha=1a04a7c0 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1a04a7c0-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1a04a7c008541a730e3ea57e511195d3d4567b44.nq.gz
+[2026-04-13T03:09:31Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-13T03:09:32Z] [iter=1] AST store loaded triples=22499 load_secs=0 mem_mb=115 MB
+[2026-04-13T03:09:32Z] [iter=1] Step 2: Finding LSP targets mem_mb=115 MB
+[2026-04-13T03:09:32Z] [iter=1] LSP targets found call_sites=143 imports=20 extends=5 implements=0 secs=0
+[2026-04-13T03:09:32Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=115 MB
+[2026-04-13T03:09:32Z] [iter=1] Position index built positions=1565 nodes_with_types=1982 secs=0 mem_mb=115 MB
+[2026-04-13T03:09:32Z] [iter=1] Step 3: Starting LSP resolution mem_mb=115 MB already_completed_types=[] already_completed_files=0
+[2026-04-13T03:09:32Z] [iter=1] Resolving target type target_type=call_site count=143
+[2026-04-13T03:09:37Z] [iter=1] Target type resolved target_type=call_site resolved=36 errors=80 secs=5 mem_mb=115 MB
+[2026-04-13T03:09:37Z] [iter=1] Resolving target type target_type=import_statement count=20
+[2026-04-13T03:09:38Z] [iter=1] Target type resolved target_type=import_statement resolved=16 errors=0 secs=1 mem_mb=115 MB
+[2026-04-13T03:09:38Z] [iter=1] Resolving target type target_type=extends_clause count=5
+[2026-04-13T03:09:39Z] [iter=1] Target type resolved target_type=extends_clause resolved=5 errors=0 secs=1 mem_mb=115 MB
+[2026-04-13T03:09:40Z] [iter=1] Step 5: Writing final enrichment file triples=1395
+[2026-04-13T03:09:40Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/1a04a7c008541a730e3ea57e511195d3d4567b44.nq.gz size_kb=19
+[2026-04-13T03:09:40Z] [iter=1] PHASE END: enrich elapsed_s=11 elapsed_min=0.2 total_triples=1395
